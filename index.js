@@ -49,7 +49,7 @@ const start = ()  => {
         if (data === chats[chatId]) {
             return bot.sendMessage(chatId, 'Ура! Ты угадал!', againOptions)
         } else {
-            return bot.sendMessage(chatId, ` Хуила тупая(Кирилл гандон и лох), я загадывал ${chats[chatId]}`, againOptions)
+            return bot.sendMessage(chatId, ` Неверно, я загадывал ${chats[chatId]}`, againOptions)
         }
     })
 }
